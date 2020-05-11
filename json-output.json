@@ -1,0 +1,96 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Login as a User with minimal logining credentials",
+        "description": "",
+        "id": "user-loging-in-to-publix-accounts;login-as-a-user-with-minimal-logining-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7283208565,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the Login Page",
+            "match": {
+              "location": "WithExampleStepDefinition.user_is_on_the_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 112858700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters  \"lalithakolla@gmail.com\" and \"Similacpublix1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lalithakolla@gmail.com",
+                  "offset": 14
+                },
+                {
+                  "val": "Similacpublix1",
+                  "offset": 43
+                }
+              ],
+              "location": "WithExampleStepDefinition.user_enters_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26002086,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "WithExampleStepDefinition.user_clicks_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5889692,
+              "error_message": "java.lang.AssertionError: expected [Sign In] but found [Home | Publix Super Markets]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\r\n\tat org.testng.Assert.assertEquals(Assert.java:116)\r\n\tat org.testng.Assert.assertEquals(Assert.java:190)\r\n\tat org.testng.Assert.assertEquals(Assert.java:200)\r\n\tat stepdefinition.WithExampleStepDefinition.user_should_be_on_the_home_page(WithExampleStepDefinition.java:49)\r\n\tat ✽.And User should be on the home page(/Users/kollas/workspace1/CucumberBDD1/src/main/java/Features/withExample.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User should be on the home page",
+            "match": {
+              "location": "WithExampleStepDefinition.user_should_be_on_the_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Close the browser",
+            "match": {
+              "location": "WithExampleStepDefinition.Close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "User Loging in to Publix Accounts",
+    "description": "",
+    "id": "user-loging-in-to-publix-accounts",
+    "keyword": "Feature",
+    "uri": "/Users/kollas/workspace1/CucumberBDD1/src/main/java/Features/withExample.feature"
+  }
+]
